@@ -2,7 +2,6 @@ from ligotools import readligo as rl
 import numpy as np
 
 def test_dq_channel_to_seglist():
-    # Create a simple 1Hz channel with two valid segments
     ch = np.array([0, 0, 1, 1, 1, 0, 1, 1, 0]) # create an array for a channel with two segments (slices 2-5 and 6-8)
     segs = rl.dq_channel_to_seglist(ch, fs=1)
     assert segs[0].start == 2

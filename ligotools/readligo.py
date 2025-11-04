@@ -168,6 +168,7 @@ def read_hdf5(filename, readstrain=True):
     dataFile.close()
     return strain, gpsStart, ts, qmask, shortnameList, injmask, injnameList
 
+
 def loaddata(filename, ifo=None, tvec=True, readstrain=True, strain_chan=None, dq_chan=None, inj_chan=None):
     """
     The input filename should be a LOSC .hdf5 file or a LOSC .gwf
