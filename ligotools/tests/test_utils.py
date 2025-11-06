@@ -8,6 +8,16 @@ def test_whiten():
 
     whiten_test = whiten(strain, interp_psd, dt)
 
-    assert(len(whiten_test) == len(strain) # assert the output is the same length as the input
-    assert np.all(np.isfinite(white_ht)) # assert there are no NaN numbers
+    assert len(whiten_test) == len(strain) # assert the output is the same length as the input
+    assert np.all(np.isfinite(whiten_test)) # assert there are no NaN numbers
 
+def test_make_psd_window():
+    fs=4096
+    #overlap_percentage=0.5
+    NFFT, psd_window, NOVL = make_psd_window(fs)
+
+    assert NFFT==4*fs # NFFT should be 4 times fs
+
+    assert len(psd_window)==NFFT # assert length of the window is the same length as the NFFT
+
+    assert NOVL==NFFT//2 # default overlap should be 50%
