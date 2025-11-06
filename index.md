@@ -1,3 +1,10 @@
+---
+title: Overview
+date: 2025-11-05
+authors:
+  - name: Sophie Hanson
+---
+
 # Stat159 HW3: LOSC Event Tutorial
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-f25/hw3-shans35/main?labpath=LOSC_Event_tutorial.ipynb)
