@@ -1,2 +1,10 @@
 # MyST build outputs
 _build
+
+# ligotools outputs
+lib/
+bdist.linux-x86_64/
+ligotools.egg-info/
+
+# Other files
+hw03_description.md
