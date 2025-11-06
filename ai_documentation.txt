@@ -1,0 +1,10 @@
+#Prompt
+I tried initializing myst in jupyterhub from my repo's home directory using 'myst init' but got this error:
+
+Updating .gitignore EISDIR: illegal operation on a directory, read Myst CLI Versions: - node 20.19.5 Required: >= 18.0.0 - npm 10.8.2 Required: >=8.6.0 - myst 1.6.3
+
+#Response
+That error means that the myst init command is trying to read a file, but it hit a directory with the same name it expected to be a file — most often .gitignore.
+
+⚠️ Common cause
+You probably have a folder named .gitignore/ instead of a file named .gitignore in your repo’s root.
