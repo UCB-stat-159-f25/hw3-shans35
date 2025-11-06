@@ -1,3 +1,3 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-f25/hw3-shans35/main?labpath=LOSC_Event_tutorial.ipynb)
 
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/wOo27OxG)
+This project builds on data from the LIGO Center for Open Science Tutorial Repository (LOSC). This repo contains a python notebook, installable python package 'ligotools', and a myst.yml file to view the rendered notebook as a MyST website. The LIGO data is located in the 'data' folder and the outputs from the notebook can be found in 'audio' and 'figures.' To view an open and executable version of the notebook, click on the 'launch binder' badge above.
